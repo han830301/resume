@@ -1,0 +1,183 @@
+@font-face{
+    font-family: Pacifico-Regular;
+    src: url(./Pacifico-Regular.ttf);
+}
+    :root{
+        --mycolor01:#E3A6A1;
+        --mycolor02:#BC5F6A;
+        --mycolor03:#19B3B1;
+        --mycolor04:#034B61;
+        --mycolor05:#ffffff;
+        --mycolor06:#85B8CB;
+        --mycolor07:#1D6A96;
+        --mycolor08:#283B42;
+        --mycolor09:#9BCFB8;
+        --mycolor10:#689C97;
+        --mycolor11:#7FB174;
+        --mycolor12:#E81E25;
+        --mycolor13:#FE7773;
+        --mycolor14:#FFC2C3;
+        --mycolor15:#0E0301;
+        --mycolor16:#fcfce4;
+        --mycolor17:#EAD6BD;
+        --mycolor18:#028C6A;    
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: var(--mycolor17);            
+    }
+    .logo img{
+        width: 100%;
+    }
+    .warpper{
+        width: 1024px;
+        padding-top: 7px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav ul{
+        background-color: var(--mycolor10);
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;    
+    }
+    nav ul li{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li a{
+        display: block;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: '標楷體';
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--mycolor07);    
+    }
+    nav ul li a:hover{
+        color: var(--mycolor15);
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-shadow: 0 0 3px 3px var(--mycolor09) inset;        
+    }
+    .content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: var(--mycolor05);    
+    }
+    .content h1{
+        color:var(--mycolor07);
+        text-align: center;
+        padding-bottom: 25px;
+        font-family: '標楷體';
+    }
+    .content p{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        font-size: 22px;
+        font-family: '標楷體';
+        color: var(--mycolor04);
+        padding-bottom: 10px;
+    }
+    .content a{                        
+        display: block;
+        background-color: var(--mycolor11);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        text-align: center;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        font-family: '標楷體';
+        font-weight: bolder;
+        font-size: 20px;
+        box-shadow: 0px 1px 1px 1px var(--mycolor15);
+        color: var(--mycolor15);
+        border-radius: 5px;
+    }
+    .content a:hover{
+        color: var(--mycolor09);
+        background-color: var(--mycolor18);
+        font-size: 22px;
+        box-shadow: 0 0 3px 3px var(--mycolor09) inset;
+        border-radius: 7px;
+    }
+    .footer{
+        background-color: var(--mycolor03);
+        text-align: center;
+        font-weight: bold;
+        color: var(--mycolor17);
+        font-family: '標楷體';
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 5px;
+    }
+    .spa{
+        font-family: Pacifico-Regular;
+    }
+    .sidebar{
+        display: block;
+        float: left;
+        background-color: var(--mycolor06);
+        width: 200px;
+        height: 721px;
+        text-align: center;
+        
+    }
+    .sidebar ul{
+        list-style-type: none;    
+    }
+    .sidebar ul li a{
+        display: block;
+        text-decoration: none;
+        border: 2px solid var(--mycolor07);
+        margin: 5px;
+        padding: 10px;
+        height: 30px;
+        width: 30;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: var(--mycolor18);
+        border-radius: 10px;    
+    }
+    .sidebar ul li a:hover{
+        color: var(--mycolor05);
+        border: 4px solid var(--mycolor05);
+    }
+    @media screen and (max-width:1024px) {
+        .warpper {
+            width: 100%;
+        }
+        .sidebar {
+            width: 100%;
+            height: auto;
+        }
+        .sidebar ul {
+            display: inline-block;
+        }
+        .sidebar ul li {
+            float: left;
+        }
+        .sidebar ul li a {
+            padding: 10px;
+            margin: 5px;
+            font-size: 20px;
+        }    
+    }

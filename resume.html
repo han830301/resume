@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷|簡歷</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <style>
+        *{
+            font-family: '標楷體';
+            margin: 0;
+            padding: 0;
+        }
+
+        .fw-700{
+            font-weight: 700;
+        }
+
+        .myimg {
+            height: 200px;
+            width: 200px;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        #myimg{
+            height: 200px;
+            width: 200px;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+        .timeline-section:before {
+            position: absolute;
+            content: "";
+            width: 3px;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-45%);
+            background-color: var( --mycolor07);
+        }
+        .timeline-section-pointer {
+            position: relative;
+        }
+        .timeline-section-pointer::before {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+            top: 0;
+            bottom: 0;
+            border: 2px solid var(--mycolor15);
+            /* left: 50%; */
+            border-radius: 50%;
+            background-color: var(--mycolor05);
+        }
+        
+        @media screen and (max-width: 996px) {
+            .timeline-section:before{
+                display: none;
+            }
+            .timeline-section-pointer::before{
+                display: none;
+            }
+
+            .myimg{
+                display: none;
+            }
+
+            #myimg{
+                width: 250px;
+                height: 250px;
+                margin: 0 auto; 
+                position: absolute;
+                left: 25%;
+                right: 25%;
+                bottom: 180px;
+            }
+
+           .text01{
+                text-align: center;
+                position: relative;
+                top: 30vh;
+                bottom: 0;
+                left: 0;
+                display: block;
+                margin: 0 auto;
+           }
+
+           .resume{
+                position: relative;
+                top: 30vh;
+                margin: 0 auto;
+                padding: 0;
+           }
+        }
+        
+        @media screen and (min-width: 375px) and (max-width: 575px) {
+            #myimg{
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                position: absolute;
+                left: 18%;
+                right: 20%;
+                bottom: 300px;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="text-center mt-3 vh-25"><h1>我的履歷</h1></div>
+        <hr>
+        <div class="text-center bg-secondary mt-3 vh-25 resume"><h1>自傳</h1></div>
+        <h5 class="me-3 ms-3 fs-5 text-center resume">
+                 您好，我是朱敏雄
+            <p>自小就對電腦資訊有濃厚的興趣，在成長的路上幾經波折<br>
+            而中斷了相關學習，同時也因緣際會進入過運動服務業的領域<br>
+            如今透過職訓的跨平台頁設計與應用的課程，<br>
+            再次投入資訊相關的學習，希望可以投身進入資訊<br>
+            相關產業成為一名優秀前端工程師或網頁設計師。
+            </p>
+        </h5>
+        <div class="text-center bg-secondary vh-25 text01"><h1>履歷</h1></div>
+        <div class="timeline-section">
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-4">
+                    <div class="text01">
+                        <div class="fs-3">基本資料</div>
+                        <p><h5>姓名:朱敏雄</h5></p>
+                        <p><h5>性別:男</h5></p>
+                        <h5>1994/03/01出生</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-1">
+                    <div id="myimg"style="background-image: url(./images/IMG_1189.JPG);"></div>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-4 order-sm-4 order-md-3">
+                    <div class="text01">
+                        <div class="fs-3">學經歷</div>
+                        <h5>最高學歷:</h5>
+                        <h5>2009/09~2012/06</h5>
+                        <h5>嶺東高中進修部-資料處理科</h5>
+                        <h5>2023/01~2023/07</h5>
+                        <h5>勞動部動力發展署 - <br>跨平台網頁設計與應用班(第一期)</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-1 order-sm-3 order-md-4">
+                    <div class="myimg" style="background-image: url(./images/high\ school.png);"></div>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-4">
+                    <div class="text01">
+                        <div class="fs-3">工作經歷</div>
+                        <h5>2016/10~2023/01</h5>
+                        <p class="fw-700">愛克有限公司-運動服務業<br>(自行車銷售及保養)</p>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-1">
+                    <div class="myimg" style="background-image: url(./images/work.png);"></div>
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center align-items-center flex-row-reverse timeline-section-pointer">
+                <div class="col-md-4">
+                    <div class="text01">
+                        <div class="meun">
+                            <label for="touch"><span class="fs-3 text-dark mb-0 mt-0">作品集</span></label>               
+                            <input type="checkbox" id="touch"> 
+                            <ul class="slide m-0 p-0">
+                                <li><a href="https://han830301.github.io/projects3/index.html" target="_blank" class="h5 text-dark fw-700">夏威夷旅遊租賃(虛構)</a></li> 
+                                <li><a href="#" target="_blank" class="h5 text-dark fw-700">一頁式行銷網頁(虛構)</a></li>
+                                <li><a href="#" target="_blank" class="h5 text-dark fw-700">小動畫</a></li>
+                                <li><a href="#" target="_blank" class="h5 text-dark fw-700">專題</a></li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+                <div class="col-md-4 offset-1">
+                    <div class="myimg" style="background-image: url(./images/portfolio.avif);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

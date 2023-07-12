@@ -1,0 +1,122 @@
+:root {
+    --mycolor01: #E3A6A1;
+    --mycolor02: #BC5F6A;
+    --mycolor03: #19B3B1;
+    --mycolor04: #034B61;
+    --mycolor05: #ffffff;
+    --mycolor06: #85B8CB;
+    --mycolor07: #1D6A96;
+    --mycolor08: #283B42;
+    --mycolor09: #9BCFB8;
+    --mycolor10: #689C97;
+    --mycolor11: #7FB174;
+    --mycolor12: #E81E25;
+    --mycolor13: #FE7773;
+    --mycolor14: #FFC2C3;
+    --mycolor15: #0E0301;
+    --mycolor16: #fcfce4;
+    --mycolor17: #EAD6BD;
+    --mycolor18: #028C6A;
+    --mycolor19: #E1DCD9;
+    --mycolor20: #F2AB39;
+}
+.demo{
+    width: 95%;
+    border: 2px solid var(--mycolor15);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px auto;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.bg-cover{
+    background-position: center;
+    background-size: cover;
+}
+
+.fw-700{
+   font-weight: 700;
+}
+
+.fw-600{
+   font-weight:600; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 768px) {
+    .table-rwd thead{
+        display: none;           
+    }
+    .table-rwd tbody tr{
+        display: block;
+        border: 1px solid var(--mycolor19);
+        margin: 6px;
+    }
+    .table-rwd tbody tr td{
+        display: block;
+        overflow: hidden;     
+    }
+    .table-rwd tbody tr td:before{
+        content: attr(data-th);
+        display: block;
+        float: left;
+        color:var(--mycolor05);
+        background-color: var(--mycolor07);
+        width: 30%;   
+        padding: 10px;
+    }
+    
+    .table-rwd tbody tr td span.table-col{
+        width: 70%;
+    }
+
+}
+body{
+      /* background-color : #ededed; */
+      font-family : "Open Sans", sans-serif;
+    }
+
+li a {
+        text-decoration : none;
+        /* color : #2d2f31; */
+    }
+
+span {
+        /* padding : 30px; */
+        font-variant : small-caps;
+        cursor : pointer;
+        display: block;
+    }
+
+span::after {
+        float: right;
+        right: 10%;
+        content: "+";
+    }
+
+.slide {
+        clear:both;
+        /* width:100%; */
+        height:0;
+        overflow: hidden;
+        /* text-align: center; */
+        transition: height .4s ease;
+        list-style: none;
+    }
+
+/* .slide li {
+    padding : 30px;
+    } */
+
+#touch {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }    
+
+#touch:checked + .slide {
+        height: 160px;
+    } 

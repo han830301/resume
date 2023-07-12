@@ -1,0 +1,36 @@
+:root{
+    --mycolor01:#E3A6A1;
+    --mycolor02:#BC5F6A;
+    --mycolor03:#19B3B1;
+    --mycolor04:#034B61;
+    --mycolor05:#ffffff;
+    --mycolor06:#85B8CB;
+    --mycolor07:#1D6A96;
+    --mycolor08:#283B42;
+    --mycolor09:#9BCFB8;
+    --mycolor10:#689C97;
+    --mycolor11:#7FB174;
+    --mycolor12:#E81E25;
+    --mycolor13:#FE7773;
+    --mycolor14:#FFC2C3;
+    --mycolor15:#0E0301;
+    --mycolor16:#fcfce4;
+    --mycolor17:#EAD6BD;
+    --mycolor18:#028C6A;
+    --mycolor19:#E1DCD9;
+    --mycolor20:#F2AB39;
+}
+body{
+    background-color: var(--mycolor17);
+}
+
+h1{
+    color:var(--mycolor07) ;
+}
+/* h2{
+    
+} */
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
